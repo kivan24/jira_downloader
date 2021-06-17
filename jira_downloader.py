@@ -8,6 +8,7 @@ logging.basicConfig(level=logging.INFO,
                     filename="catalina_out.log",
                     format="%(asctime)s  %(module)s %(levelname)s    %(message)s")
 logging.info(f"\n\n{'*' * 16}\nStarting...\n{'*' * 16}\n")
+print("Working...")
 
 config = configparser.ConfigParser()
 config.read("settings.conf")
@@ -36,3 +37,4 @@ except:
 
 jra = jira.JIRA(jira_url, auth=(username, password), folders=(issues_folder, attachments_folder))
 jra.download_all_issues_from_project(project_key, export_type)
+print("Done!")
