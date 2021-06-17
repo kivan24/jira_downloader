@@ -13,6 +13,6 @@ class Project:
                 "validateQuery": "true",
                 "fields": "summary,attachment",
                 "startAt": 0,
-                "maxResults": 250
+                "maxResults": 800
                }
 
