@@ -13,7 +13,7 @@ class Issue:
         return self.__summary
 
     def get_issue_info(self):
-        return f"({self.__issue_key}) {self.__summary}"
+        return f"({self.__issue_key}) {(self.__summary[:75] + '...') if len(self.__summary) > 78 else self.__summary}"
     
     def get_attachments_count(self):
         return self.__attachments_count
