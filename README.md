@@ -1,2 +1,2 @@
 # JIRA downloader
-Download from JIRA issues and attachments
+Download issues and attachments from JIRA
